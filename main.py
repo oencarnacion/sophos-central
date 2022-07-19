@@ -20,7 +20,7 @@ doc = filecontent.split('\n')
 context = ssl.create_default_context()
 ## Loads default certs from host os
 context.load_default_certs()
-es = Elasticsearch(['kibana.abr4x.com:9200'], http_auth=('oencarnacion', 'Liz2172!'),
+es = Elasticsearch(['domain.com:9200'], http_auth=('user', 'pass'),
                    scheme="https", port=443, ssl_context=context)
 
 # handle every single entry and commits it to elasticsearch
